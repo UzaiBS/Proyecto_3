@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas frecuentes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+</head>
+
+<style>
+      @font-face {
+    font-family: 'Belgan Aesthetic';
+    src: url('fonts/BelganAesthetic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+</style>
+
+
+<style>
+    .custom-text {
+        /* Color del texto */
+        color: white;
+        /* Tamaño de sombra para simular el borde */
+        text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;
+    }
+    .font-alex {
+      font-family: 'Alex Brush', cursive;
+    }
+
+
+body {
+    font-family: 'Belgan Aesthetic', sans-serif;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E6E6FA;
+    color: black;
+    padding: 15px;
+    margin-top: 0;
+  }
+
+  .footer .left-section, .footer .center-section, .footer .right-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer .left-section {
+    flex-direction: column;
+  }
+
+  .footer .center-section {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 20px;
+  }
+
+  .footer .right-section span {
+    margin-right: 15px;
+  }
+
+  .footer .circle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .footer span{
+    font-size: 18px;
+  }
+ 
+ 
+</style>
+<header>
+    <nav class="flex justify-between items-center p-4 bg-[#E6E6FA]">
+        <h1 class="text-4xl font-alex ">Creaciones Isela</h1>
+        <ul class="flex list-none space-x-4">
+            <li><a href="index.html" class="hover:underline">Inicio</a></li>
+            <li><a href="acerca.html" class="hover:underline">Acerca de</a></li>
+            <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+            <li><a href="productos.html" class="hover:underline">Productos</a></li>
+            <li><a href="galeria.html" class="hover:underline">Galeria</a></li>
+            <li><a href="reseñas.html" class="hover:underline">Reseñas</a></li>          
+        </ul>
+    </nav>
+</header>
+
+<body class="bg-pink-200">  
+  <div class="flex flex-col items-center justify-center p-6">    
+    <p class="text-3xl mb-2"><b>Preguntas Frecuentes</b></p>
+  </div>
+  <div class="flex justify-around">
+    <ul class="text-2xl list-disc" style="padding-left: 20px;">
+      <li><a href="#">¿Cómo puedo hacer mi pedido?</a></li>
+      <li><a href="#">¿Cómo puedo darme de alta?</a></li>
+      <li><a href="#">¿Cómo puedo pagar si no cuento con tarjeta bancaria?</a></li>
+      <li><a href="#">¿Cuánto tiempo tarda en llegar mi pedido?</a></li>
+      <li><a href="#">¿Tienen sucursales físicas?</a></li>
+      <li ><a href="#">¿Qué tipo de materiales usan?</a></li>
+    </ul>
+    <div class="w-[300px] h-[350px] space-y-4 rounded-lg bg-white mb-5"> <!-- flex items-center justify-center -->
+      <div class="h-[40px] bg-purple-100 justify-around flex text-center text-xl p-1">
+        <img src="Assets/chat.png" alt="Chat">
+        Asistencia en línea
+      </div>
+      <div class="text-l"> <!-- Cuerpo de chat -->
+        <div class="h-[5px]">
+          <!-- Espacio en blanco -->
+        </div>
+        <div class="flex justify-center items-center ml-2 h-[40px] w-[250px] bg-purple-100 rounded-tl-lg rounded-tr-lg rounded-br-lg">
+          ¡Hola!, ¿En qué te puedo ayudar?
+        </div>
+        <div class="h-[10px]">
+          <!-- Espacio en blanco -->
+        </div>
+        <div class="flex justify-end items-center ml-20 mr-2 h-[30px] bg-gray-200 rounded-tl-lg rounded-tr-lg rounded-bl-lg pr-2">
+          Hola!
+        </div>
+        <div class="h-[160px]">
+          <!-- Espacio en blanco -->
+        </div>
+        <div class="flex">
+          <div>
+            <input type="text" placeholder="Escribe algo..." class="border-2 border-gray-200 ml-2 rounded-lg p-1">
+          </div>
+          <div class="h-10 w-10 ml-5  pl-2 pt-1 rounded-full border-2 border-gray-200">
+           <a href="#"><img src="Assets/enviar.png" alt="Enviar" class="w-[25px] h-[25px]"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+     <!--  <div class="w-full max-w-md p-8 bg-white rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-center text-gray-800">Aistencia en línea</h2>
+        <p class="text-center text-gray-600 mb-6">Rellena el formulario para cualquier consulta</p>
+        <form action="#" method="POST" class="space-y-4">
+            <div>
+                <label for="name" class="block text-gray-700">Nombre</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-300 bg-purple-50">
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-300 bg-purple-50">
+            </div>
+            <div>
+                <label for="message" class="block text-gray-700">Mensaje</label>
+                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-300 bg-purple-50"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="px-4 py-2 text-white bg-purple-400 rounded-md hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-300">Enviar</button>
+            </div>
+        </form> -->
+      
+</body>
+
+<footer class="footer h-[200px]">
+    <div class="left-section">
+      <span>TERMINOS Y CONDICIONES</span>
+      <span>NOSOTROS</span>
+    </div>
+  
+    <div class="flex flex-col  items-between">
+      <h1 class="font-belgan mb-6 text-7xl"></h1>
+      <div class="flex justify-around">
+     <a href="https://www.facebook.com/"> <svg class="" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+        <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"></path>
+    </svg></a>
+    <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+        <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"></path>
+    </svg></a>
+</div>
+    </div>
+  
+    <div class="right-section">
+      <p class="text-4xl mr-8">NUM 3310621015</p>
+      
+  </footer>
+</html>

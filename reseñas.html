@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valoración de Productos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+</head>
+
+
+<style>
+  .font-alex {
+    font-family: 'Alex Brush', cursive;
+  }
+
+
+
+  .custom-text {
+    /* Color del texto */
+    color: white;
+    /* Tamaño de sombra para simular el borde */
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E6E6FA;
+    /* color naranja */
+    color: black;
+    padding: 15px;
+  }
+
+  .footer .left-section,
+  .footer .center-section,
+  .footer .right-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer .left-section {
+    flex-direction: column;
+  }
+
+  .footer .center-section {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 20px;
+  }
+
+  .footer .right-section span {
+    margin-right: 15px;
+  }
+
+  .footer .circle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  .footer span {
+    font-size: 18px;
+  }
+</style>
+
+<header>
+  <nav class="flex justify-between items-center p-4 bg-[#E6E6FA]">
+   <a href="index.html"> <h1 class="text-4xl font-alex ">Creaciones Isela</h1></a>
+    <ul class="flex list-none space-x-4">
+      <li><a href="index.html" class="hover:underline">Inicio</a></li>
+      <li><a href="acerca.html" class="hover:underline">Acerca de</a></li>
+      <li><a href="contacto.html" class="hover:underline">Contacto</a></li>
+      <li><a href="productos.html" class="hover:underline">Productos</a></li>
+      <li><a href="galeria.html" class="hover:underline">Galeria</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+<body class="bg-pink-100 text-gray-800">
+ 
+  <div class="max-w-7xl mx-auto p-6">
+  
+    <h1 class="text-center text-3xl font-bold text-purple-600 mb-8">Valoración de Productos</h1>
+    
+ 
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+     
+      <div class="bg-purple-100 rounded-lg shadow-md p-4">
+        <img class="h-[200px]" src="Assets/img3.webp" alt="Producto 1" class="rounded-md mb-4">
+        <h2 class="text-lg font-semibold text-gray-700">Producto 1</h2>
+        <p class="text-gray-500 mb-2">Precio: $200</p>
+        
+        <div class="flex items-center mb-4">
+          <span class="text-yellow-400">★★★★☆</span>
+          <span class="ml-2 text-sm text-gray-500">(4.0)</span>
+        </div>
+        <button class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-md w-full">
+          Agregar Reseña
+        </button>
+      </div>
+      
+
+      <div class="bg-purple-100 rounded-lg shadow-md p-4">
+        <img class="h-[200px]" src="Assets/img2.webp" alt="Producto 2" class="rounded-md mb-4">
+        <h2 class="text-lg font-semibold text-gray-700">Producto 2</h2>
+        <p class="text-gray-500 mb-2">Precio: $300</p>
+     
+
+        <div class="flex items-center mb-4">
+          <span class="text-yellow-400">★★★☆☆</span>
+          <span class="ml-2 text-sm text-gray-500">(3.5)</span>
+        </div>
+        <button class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-md w-full">
+          Agregar Reseña
+        </button>
+      </div>
+      
+      <div class="bg-purple-100 rounded-lg shadow-md p-4">
+        <img class="h-[200px]" src="Assets/img7.webp" alt="Producto 3" class="rounded-md mb-4">
+        <h2 class="text-lg font-semibold text-gray-700">Producto 3</h2>
+        <p class="text-gray-500 mb-2">Precio: $400</p>
+       
+
+        <div class="flex items-center mb-4">
+          <span class="text-yellow-400">★★★★★</span>
+          <span class="ml-2 text-sm text-gray-500">(5.0)</span>
+        </div>
+        <button class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-md w-full">
+          Agregar Reseña
+        </button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-md p-6 mt-8 max-w-2xl mx-auto">
+      <h2 class="text-2xl font-bold text-purple-600 mb-4">Agregar una Reseña</h2>
+      <form>
+        <div class="mb-4">
+          <label for="nombre" class="block text-gray-700 font-medium mb-2">Nombre:</label>
+          <input type="text" id="nombre" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500" placeholder="Tu nombre">
+        </div>
+        <div class="mb-4">
+          <label for="producto" class="block text-gray-700 font-medium mb-2">Producto:</label>
+          <select id="producto" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500">
+            <option>Producto 1</option>
+            <option>Producto 2</option>
+            <option>Producto 3</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="comentarios" class="block text-gray-700 font-medium mb-2">Comentarios:</label>
+          <textarea id="comentarios" rows="4" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-purple-500 focus:border-purple-500" placeholder="Escribe tus comentarios aquí"></textarea>
+        </div>
+        <button type="submit" class="bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-md w-full">
+          Enviar Reseña
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+
+
+
+<footer class="footer h-[200px]">
+  <div class="left-section">
+    <span>TERMINOS Y CONDICIONES</span>
+    <span>NOSOTROS</span>
+  </div>
+
+  <div class="flex flex-col  items-between">
+    <h1 class="font-belgan mb-6 text-7xl"></h1>
+    <div class="flex justify-around">
+      <a href="https://www.facebook.com/"> <svg class="" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+          height="50" viewBox="0 0 50 50">
+          <path
+            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
+          </path>
+        </svg></a>
+      <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50"
+          height="50" viewBox="0 0 50 50">
+          <path
+            d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+          </path>
+        </svg></a>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <p class="text-4xl mr-8">NUM 3310621015</p>
+
+</footer>
+</html>
